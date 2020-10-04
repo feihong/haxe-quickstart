@@ -12,8 +12,7 @@ class Hello {
 
   static public function main():Void {
     // trace("你好世界");
-    for (i in 0...8) {
-      Sys.println(randomHanzi());
-    }
+    var array = [for (i in 0...8) randomHanzi()];
+    trace(array);
   }
 }
